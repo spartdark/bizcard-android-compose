@@ -73,9 +73,33 @@ fun createBizCard() {
             ) {
                 CreateImageProfile()
                 Divider()
+                DataText()
             }
 
         }
+    }
+}
+
+@Composable
+private fun DataText() {
+    Column(modifier = Modifier.padding(5.dp)) {
+        Text(
+            text = "Vladimir S.",
+            style = MaterialTheme.typography.titleLarge,
+            color = MaterialTheme.colorScheme.primary
+        )
+        Text(
+            text = "Android Compose Programmer",
+            Modifier.padding(3.dp),
+            style = MaterialTheme.typography.titleMedium,
+            color = MaterialTheme.colorScheme.primary
+        )
+        Text(
+            text = "vsaldivarm@icloud.com",
+            Modifier.padding(3.dp),
+            style = MaterialTheme.typography.titleMedium,
+            color = MaterialTheme.colorScheme.primary
+        )
     }
 }
 
